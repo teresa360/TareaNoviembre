@@ -48,7 +48,7 @@ function inicializar() {
         const div = document.createElement("div");
         main.appendChild(div);
         div.classList.add('tarjeta')
-        div.style.backgroundImage = `url(/assets/images/animales/${animal}.svg)`;
+        div.style.backgroundImage = `url(assets/images/animales/${animal}.svg)`;
         div.dataset.nombre = animal;
     }
     generarNombre();
