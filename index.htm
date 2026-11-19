@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- imágenes de https://www.svgrepo.com/collection/animal-icons/2 (salvo icono reset de https://www.flaticon.com)
+     Sonidos de https://freesound.org (recortados con https://mp3cut.net/es/)
+     Practicando https://sweetalert2.github.io/
+     -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de animales</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <header class="encabezado">
+      <h1>🇬🇧 Aprende inglés 🇬🇧</h1>
+      <!-- GB es el emoji de la bandera del Reino Unido-->
+      <div id="info" class="encabezado__info">
+        Aciertos: <span id="aciertos">0</span> Fallos:
+        <span id="fallos">0</span> Tiempo: <span id="tiempo">0</span> <i class="bi bi-arrow-clockwise" id="reiniciar"></i>
+      </div>
+    </header>
+    <main class="juego">
+      <div>
+        <h2 id="elegido" class="juego__palabra"></h2>
+      </div>
+      <div id="tarjetas" class="juego__tarjetas"></div>
+    </main>
+  </body>
+</html>
